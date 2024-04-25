@@ -1,0 +1,30 @@
+<!-- ---
+// Example Astro component
+import { Fragment } from 'react';
+--- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="contact" method="POST" action="/success" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <label>
+        Your Name:
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
